@@ -31,3 +31,15 @@ function show(){
     console.log(functionLet); // Throws ReferenceError
     console.log(functionConst); // Throws ReferenceError
 
+{
+    var newVarVariable = 0;
+    let newLetVariable = 1;
+    const newConstVariable = 2;
+
+    newVarVariable = 1;
+    newLetVariable = 2;
+    newConstVariable = 3;
+}
+    newVarVariable = 10;
+    newLetVariable = 20;
+    newConstVariable = 30;
