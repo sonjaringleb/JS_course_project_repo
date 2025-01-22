@@ -36,10 +36,28 @@ function show(){
     let newLetVariable = 1;
     const newConstVariable = 2;
 
+    console.log(newVarVariable);
+    console.log(newLetVariable);
+    console.log(newConstVariable);
+
     newVarVariable = 1;
     newLetVariable = 2;
     newConstVariable = 3;
+
+    console.log(newVarVariable);
+    console.log(newLetVariable);
+    console.log(newConstVariable);
 }
+
+    console.log(newVarVariable);
+    console.log(newLetVariable);
+    console.log(newConstVariable);
+
     newVarVariable = 10;
     newLetVariable = 20;
     newConstVariable = 30;
+
+    console.log(newVarVariable);
+    console.log(newLetVariable);
+    console.log(newConstVariable);
+    
