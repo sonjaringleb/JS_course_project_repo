@@ -50,3 +50,36 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let person = "Non-Subscriber";
+let accessRights; 
+
+switch(person){
+    case "Employee": 
+        accessRights = "Dietary Services";
+        break;
+    case "Enrolled Member":
+        accessRights = "Dietary Services and one-on-one interaction with a dietician";
+        break;
+    case "Subscriber": 
+        accessRights="Part of Dietary Services";
+        break;
+    case "Non-Subscriber": 
+        accessRights="None. ";
+        break;
+    default: 
+        person = "Non-Subscriber";
+}
+
+let article = "a ";
+if (person === "Employee" || person === "Enrolled Member"){
+    article = "an ";
+}
+let message = "You are " + article + person + "." + "You have access to the following services: " + accessRights;
+
+if(person != "Non-Subscriber"){
+    alert(message);
+}
+else {
+    alert(message + "You need to subscribe first to get access to a service.");
+}
