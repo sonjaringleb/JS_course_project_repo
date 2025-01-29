@@ -1,3 +1,5 @@
+// Task 1
+
 let userRole = "admin";
 let accessLevel;
 
@@ -10,6 +12,8 @@ if (userRole === "admin") {
 }
 
 console.log("Access Level:", accessLevel);
+
+// Task 2
 
 let isLoggedIn = true;
 let userMessage;
@@ -25,6 +29,8 @@ if (isLoggedIn) {
 }
 
 console.log("User Message:", userMessage);
+
+// Task 3
 
 let userType = "subscriber";
 let userCategory;
@@ -45,6 +51,8 @@ switch (userType) {
 
 console.log("User Category:", userCategory);
 
+// Task 4
+
 let isAuthenticated = true;
 
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
@@ -54,6 +62,8 @@ console.log("Authentication Status:", authenticationStatus);
 let person = "Non-Subscriber";
 let accessRights; 
 
+// Task 5
+
 switch(person){
     case "Employee": 
         accessRights = "Dietary Services";
@@ -62,10 +72,10 @@ switch(person){
         accessRights = "Dietary Services and one-on-one interaction with a dietician";
         break;
     case "Subscriber": 
-        accessRights="Part of Dietary Services";
+        accessRights = "Part of Dietary Services";
         break;
     case "Non-Subscriber": 
-        accessRights="None. ";
+        accessRights = "None. ";
         break;
     default: 
         person = "Non-Subscriber";
@@ -77,7 +87,7 @@ if (person === "Employee" || person === "Enrolled Member"){
 }
 let message = "You are " + article + person + "." + "You have access to the following services: " + accessRights;
 
-if(person != "Non-Subscriber"){
+if (person != "Non-Subscriber"){
     alert(message);
 }
 else {
