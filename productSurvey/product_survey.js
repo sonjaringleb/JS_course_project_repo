@@ -27,8 +27,37 @@ function submitFeedback() {
     document.getElementById('userInfo').style.display = 'block';
 }
 
+// IIFE
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         submitFeedback();
     }
 });
+
+//Alternatives for Event Function
+
+// Function Expression
+let keyFunction = function (event) {
+    if (event.key === 'Enter') {
+        submitFeedback();
+    }
+};
+
+document.addEventListener('keydown', keyFunction);
+
+// Arrow Function
+let keyFunction2 = (event) => {
+    if (event.key === 'Enter') {
+        submitFeedback();
+    }
+};
+
+// Function Definition
+function keyFunction3(event){
+    if (event.key === 'Enter') {
+        submitFeedback();
+    }
+}
+
+document.addEventListener('keydown',keyFunction3);
+
