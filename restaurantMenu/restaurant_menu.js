@@ -6,6 +6,14 @@ const dessertMenu = ['Cake', 'Ice Cream', 'Pudding', 'Fruit Salad'];
 const breakfastMenuItemsHTML = breakfastMenu.map((item, index) => `<p>Item ${index + 1}: ${item}</p>`).join('');
 document.getElementById('breakfastMenuItems').innerHTML = breakfastMenuItemsHTML;
 
+// Alternative BreakfastMenu without arrow function.
+function buildBreakfastItem(item, index) {
+    let breakfastItem = `<p>Item ${index + 1}: ${item}</p>`;
+    return breakfastItem;
+}
+const breakfastMenuItemsHTML2 = breakfastMenu.map(buildBreakfastItem).join('');
+console.log(breakfastMenuItemsHTML2);
+
 // Traverse mainCourseMenu array
 let mainCourseItem = '';
 mainCourseMenu.forEach((item, index) => {
