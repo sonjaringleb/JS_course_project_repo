@@ -2,7 +2,7 @@ function showweatherDetails(event) {
     event.preventDefault();
     const lat = document.getElementById("lat").value;
     const lon = document.getElementById("lon").value;
-    const apiKey = "92b1e6384db2868d99fc908e6cc64d3e"; // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = ""; // Replace 'YOUR_API_KEY' with your actual API key
     const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=temperature_2m&current=temperature_2m`;
 
     fetch(apiUrl)
