@@ -53,7 +53,5 @@ xhr.onload = function () {
       articleDiv.appendChild(title);
 
     });
-
-    xhr.send();
 }
-
+    xhr.send();
